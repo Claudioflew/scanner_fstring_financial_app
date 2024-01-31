@@ -19,6 +19,9 @@ public class LabExercise2 {
         int loanAmount;
         System.out.print("Please enter the loan amount: ");
         while (true) {
+            // Input validation logic:
+            // Input should be stored as a string first and then use try and catch to convert the string to integer.
+            // Use while loop to continue if the program catches an error.
             inputStr = input.next();
             try {
                 loanAmount = Integer.parseInt(inputStr);
